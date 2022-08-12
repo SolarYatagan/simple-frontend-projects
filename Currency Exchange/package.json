@@ -1,13 +1,17 @@
 {
-  "name": "currency-exchange",
+  "name": "package",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Js app for currency conversion, using api from this website https://rapidapi.com/fyhao/api/currency-exchange",
+  "main": "convertor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "currency",
+    "convertor",
+    "exchange"
+  ],
+  "author": "Pavel Senokosov",
   "license": "ISC",
-  "type": "module"
+  "type":"module"
 }
