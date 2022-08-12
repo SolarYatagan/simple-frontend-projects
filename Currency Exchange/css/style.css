@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(153, 148, 148);
+}
+.card{
+    height: 75%;
+    min-height: 800px;
+    width: 40%;
+    min-width: 600px;
+    background-color: rgb(207, 200, 192);
+    display: flex;
+    margin: auto;
+    border-radius: 30px;
+    border: 4px black;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.hat{
+   border-top-right-radius: 30px;
+   border-top-left-radius: 30px;  
+   display:flex;
+   align-items: flex-start;
+   width: 100%;
+   min-width: 600px;
+   min-height: 50pxpx;
+   background-color: rgb(28, 134, 177);
+   height: 10vh; 
+   min-height: 100px;
+   overflow: hidden;
+}
+
+.card .hat h1{
+    width: 100%;
+    height: auto;
+    min-width: 50px;
+    font-size: 46px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.swap{  /*swap button, for swapping currency*/
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    min-width: 500px;
+    height:calc(100% - 96.8px);
+    bottom: 0;
+    font-size: 24px;
+}
+
+.swap button{
+    font-size: 24px;
+    display: inline-flex;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    padding: 15px;
+    background-color: rgb(177, 121, 250);
+    cursor: pointer;
+    margin: 10px 0;
+}
+.swap button:hover{
+    background-color: rgb(240, 241, 234);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+form{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+label,span{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+label, select,span{
+    display: block;
+    text-align: center;
+}
+select{
+    width: 100%;
+    height: 2rem;
+    font-size: 18px;
+}
+
+input{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    height: 2rem;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.convert_btn button{
+    display: inline-flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    min-width: 0px;
+    width: auto;
+    cursor: pointer;
+    margin: 0px;
+    outline-offset: 4px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 113, 235) none repeat scroll 0% 0%;
+    border: 2px solid rgb(0, 113, 235);
+    border-radius: 8px;
+  }
+
+.convert_btn button:hover{
+    opacity: 0.9;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.for_currency select{
+    margin-bottom: 25px;
+    
+}
+
+.output{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.output h2{
+    margin-top: 2rem;
+
+}
